@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <h1>Day 4 - Assignment 7 - Arrow functions</h1>
+    </head>
+    <body>
+        <script>
+            let yes= ()=>alert('you agreed')
+            let no = ()=>alert("You cancelled the execution")
+            let ask = (question,yes,no)=>{if(confirm(question)){yes()}else{no()}}
+
+            let result= ask("Do you agree ?", yes,no)
+            console.log(result)
+        </script>
+    </body>
+</html>
